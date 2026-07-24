@@ -1,68 +1,85 @@
-# Codeigniter CRUD Generator 1.4 by [harviacode.com](http://harviacode.com)#
+# DDAS — CodeIgniter Web Application with CRUD Generator
 
-## About : ##
+A web application built with CodeIgniter 3, featuring the Harviacode CRUD Generator for rapid development of CRUD operations. Includes Bootstrap 3 styling, DataTables for server-side processing, and a landing page dashboard.
 
-Codeigniter CRUD Generator is a simple tool to auto generate model, controller and view from your table. This tool will boost your writing code. This CRUD generator will make a complete CRUD operation, pagination, search, form*, form validation, export to excel and export to word. This CRUD Generator using bootstrap 3 style. You still need to modify the result code for more customization.
+Developed by Rifqi Mulyawan — [rifqimulyawan.com](https://rifqimulyawan.com)
 
-*generate textarea and text input only
+## Features
 
-Please visit and like [harviacode.com](http://harviacode.com) for more info and PHP tutorials.
+- **CRUD Generator** — Auto-generate models, controllers, and views from database tables via Harviacode
+- **Server-side DataTables** — Efficient data rendering with pagination and search
+- **Bootstrap 3 UI** — Responsive design with dashboard and landing page templates
+- **Export Functionality** — Export data to Excel and Word
+- **Form Validation** — Built-in form validation and search capabilities
 
-## Preparation before using this CRUD Generator (Important) : ##
+## Tech Stack
 
-* On application/config/autoload.php, load database library, session library and url helper.
-* On application/config/config.php, set $config['base_url'] = 'http://localhost/yourprojectname', $config['index_page'] = '', $config['url_suffix'] = '.html' and $config['encryption_key'] = 'randomstring'
-* On application/config/database.php, set hostname, username, password and database
+- PHP (CodeIgniter 3)
+- MySQL (database)
+- Bootstrap 3 (CSS framework)
+- jQuery + DataTables
+- Harviacode CRUD Generator 1.4
 
-## How to use this CRUD Generator : ##
+## Installation
 
-1. Simply put 'harviacode' folder, 'asset' folder and .htaccess file into your project root folder.
-2. Open http://localhost/yourprojectname/harviacode.
-3. Select table and push generate button.
+### Prerequisites
 
-OR 
+- PHP 5.6+
+- MySQL/MariaDB
+- Apache/Nginx with mod_rewrite enabled
 
-watch video on https://youtu.be/OHZ7hhRLUZM
+### Setup
 
-## FAQ : ##
+1. Clone the repository to your web server directory:
+```bash
+git clone https://github.com/rifqimulyawan/ddas.git
+```
 
-* Select table show no data. Make sure you have correct database configuration on application/config/database.php and load database library on autoload.
-* Error chmod on mac and linux. Please change your application folder and harviacode folder chmod to 777
-* Error 404 when click Create, Read, Update, Delete or Next Page. Make sure your mod_rewrite is active and you can access http://localhost/yourproject/welcome. The problem is on htaccess. Still have problem? please go to google and search how to remove index.php codeigniter.
-* Error cannot Read, Update, Delete. Make sure your table have primary key.
+2. Configure the database in `application/config/database.php`
 
-## Thanks for Support Me ##
-Buy me a cup of coffee.. paypal : hariprasetyo0212@gmail.com
+3. Configure the base URL in `application/config/config.php`
 
-## Update ##
-V.1.4 - 26 November 2016
+4. Ensure `mod_rewrite` is enabled (for clean URLs without `index.php`)
 
-* Change to serverside datatables using ignited datatables
+5. Visit `http://localhost/ddas` in your browser
 
-V.1.3.1 - 05 April 2016
+### Using the CRUD Generator
 
-* Put view files into folder
+1. Navigate to `http://localhost/ddas/harviacode`
+2. Select a database table
+3. Click "Generate" to create model, controller, and view files
+4. Generated files are placed in `harviacode/output/`
 
+## Project Structure
 
-V.1.3 - 09 December 2015
+```
+ddas/
+├── application/
+│   ├── config/          # Database and app configuration
+│   ├── controllers/     # Application controllers
+│   ├── models/          # Data models
+│   ├── views/           # HTML templates
+│   └── libraries/       # Custom libraries
+├── assets/
+│   ├── bootstrap/       # Bootstrap 3 CSS/JS
+│   ├── datatables/      # DataTables plugin
+│   ├── dashboard/       # Dashboard styles
+│   ├── js/              # Custom JavaScript
+│   └── landing/         # Landing page styles
+├── harviacode/          # CRUD Generator tool
+│   ├── core/            # Generator engine
+│   ├── output/          # Generated files
+│   └── index.php        # Generator UI
+├── system/              # CodeIgniter framework
+├── uploads/             # User uploaded files
+├── .htaccess
+└── index.php            # Application entry point
+```
 
-* Zero Config for database connection
-* Fix bug searching
-* Fix field name label
-* Add select table from database
-* Add generate all table
-* Select target folder from setting menu
-* Remove support for Codeigniter 2
+## License
 
-V.1.2 - 25 June 2015
+This project uses CodeIgniter (MIT License) and Harviacode CRUD Generator. The application code is open source.
 
-* Add custom target folder
-* Add export to excel
-* Add export to word
+## Developer
 
-V.1.1 - 21 May 2015
-
-* Add custom controller name and custom model name
-* Add client side datatables
-
-**Copyright 2015 [harviacode.com](http://harviacode.com)**
+Rifqi Mulyawan — [rifqimulyawan.com](https://rifqimulyawan.com)
