@@ -1,24 +1,43 @@
 # DDAS — CodeIgniter Web Application with CRUD Generator
 
-A web application built with CodeIgniter 3, featuring the Harviacode CRUD Generator for rapid development of CRUD operations. Includes Bootstrap 3 styling, DataTables for server-side processing, and a landing page dashboard.
+> A web application built with CodeIgniter 3, featuring the Harviacode CRUD Generator for rapid development of CRUD operations. Includes Bootstrap 3 styling, DataTables for server-side processing, and a landing page dashboard.
 
-Developed by Rifqi Mulyawan — [rifqimulyawan.com](https://rifqimulyawan.com)
+<div align="center">
+
+<img src="https://img.shields.io/badge/PHP-5.6+-777BB4?style=flat-square&logo=php&logoColor=white" alt="PHP" />
+<img src="https://img.shields.io/badge/CodeIgniter-3-DD4814?style=flat-square&logo=codeigniter&logoColor=white" alt="CodeIgniter" />
+<img src="https://img.shields.io/badge/Bootstrap-3-7952B3?style=flat-square&logo=bootstrap&logoColor=white" alt="Bootstrap" />
+<img src="https://img.shields.io/badge/Database-MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" alt="MySQL" />
+<img src="https://img.shields.io/badge/DataTables-Server--side-FF6B6B?style=flat-square&logo=datatables&logoColor=white" alt="DataTables" />
+<img src="https://img.shields.io/badge/License-MIT-22B14C?style=flat-square&logo=opensourceinitiative&logoColor=white" alt="License" />
+
+</div>
+
+---
 
 ## Features
 
-- **CRUD Generator** — Auto-generate models, controllers, and views from database tables via Harviacode
-- **Server-side DataTables** — Efficient data rendering with pagination and search
-- **Bootstrap 3 UI** — Responsive design with dashboard and landing page templates
-- **Export Functionality** — Export data to Excel and Word
-- **Form Validation** — Built-in form validation and search capabilities
+| Feature | Description |
+|---------|-------------|
+| **CRUD Generator** | Auto-generate models, controllers, and views from database tables via Harviacode |
+| **Server-side DataTables** | Efficient data rendering with pagination and search |
+| **Bootstrap 3 UI** | Responsive design with dashboard and landing page templates |
+| **Export Functionality** | Export data to Excel and Word |
+| **Form Validation** | Built-in form validation and search capabilities |
+
+---
 
 ## Tech Stack
 
-- PHP (CodeIgniter 3)
-- MySQL (database)
-- Bootstrap 3 (CSS framework)
-- jQuery + DataTables
-- Harviacode CRUD Generator 1.4
+| Category | Technology |
+|----------|-----------|
+| Backend | PHP (CodeIgniter 3) |
+| Database | MySQL |
+| Styling | Bootstrap 3 |
+| JavaScript | jQuery + DataTables |
+| Tooling | Harviacode CRUD Generator 1.4 |
+
+---
 
 ## Installation
 
@@ -50,6 +69,8 @@ git clone https://github.com/rifqimulyawan/ddas.git
 3. Click "Generate" to create model, controller, and view files
 4. Generated files are placed in `harviacode/output/`
 
+---
+
 ## Project Structure
 
 ```
@@ -76,10 +97,12 @@ ddas/
 └── index.php            # Application entry point
 ```
 
+---
+
 ## License
 
 This project uses CodeIgniter (MIT License) and Harviacode CRUD Generator. The application code is open source.
 
 ## Developer
 
-Rifqi Mulyawan — [rifqimulyawan.com](https://rifqimulyawan.com)
+**Rifqi Mulyawan** — [rifqimulyawan.com](https://rifqimulyawan.com)
